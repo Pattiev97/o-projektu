@@ -32,6 +32,22 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 0;
+
+}
+
+a:hover, .active {
+  border-bottom: 2px solid white;
+}
+
+
 ul {
   list-style-type: none;
 }
@@ -49,7 +65,7 @@ ul {
 header,
 footer {
   padding: 1% 0 1% 0;
-  background: linear-gradient(#004D3A, #1B7C65);
+  background: linear-gradient(90deg, rgba(0,77,58,1) 0%, rgba(27,124,101,1) 100%);
   color: rgb(255, 255, 255);
 }
 
