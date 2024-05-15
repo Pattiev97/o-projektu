@@ -34,6 +34,7 @@ html {
 
 body {
   margin: 0;
+  line-height: 1.7em;
 }
 
 a {
@@ -47,6 +48,24 @@ a:hover, .active {
   border-bottom: 2px solid white;
 }
 
+.link {
+  color: #147E68;
+  font-weight: 600;
+}
+
+.link:hover {
+  filter: brightness(115%) contrast(85%);
+}
+
+article {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 960px;
+  margin: 0 auto; 
+  padding: 80px 0 50px;
+}
 
 ul {
   list-style-type: none;
