@@ -1,10 +1,37 @@
 /* Používáme intuitivní výpočet rozměrů prvků. */
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 html {
   font-family: sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__list {
+  padding: 0 10%;
+}
+
+header,
+footer {
+  padding: 1% 0 1% 0;
+  background: linear-gradient(#004D3A, #1B7C65);
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  text-align: center;
 }
 
 .container {
