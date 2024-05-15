@@ -35,7 +35,20 @@ footer {
 }
 
 .container {
-  max-width: 20rem;
+  /* TOHLE TU BYLO PŘEDDEFINOVANÉ: max-width: 20rem; */
   margin-right: auto;
   margin-left: auto;
+  display: flex;
+}
+
+.green,
+.pink {
+  flex-direction: row-reverse;
+}
+
+.green,
+.white,
+.pink {
+  justify-content: center;
+  align-items: center;
 }
