@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal, italic;
+};
+
+.montserrat-semiBold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal, italic;
+};
+
+.montserrat-black {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+};
+
 /* Používáme intuitivní výpočet rozměrů prvků. */
 *,
 *:before,
@@ -6,7 +29,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 ul {
