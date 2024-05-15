@@ -7,20 +7,6 @@
   font-style: normal, italic;
 };
 
-.montserrat-semiBold {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal, italic;
-};
-
-.montserrat-black {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-};
-
 /* Používáme intuitivní výpočet rozměrů prvků. */
 *,
 *:before,
@@ -35,6 +21,7 @@ html {
 body {
   margin: 0;
   line-height: 1.7em;
+  color: #505050;
 }
 
 a {
@@ -109,4 +96,9 @@ footer {
 .pink {
   justify-content: center;
   align-items: center;
+}
+
+img {
+  max-width: 370px;
+  border-radius: 20px;
 }
