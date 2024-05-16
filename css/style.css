@@ -27,34 +27,36 @@ body {
   color: #ffffff;
 }
 
+
 a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   padding: 8px 0;
 }
 
-a:hover,
+.menu__list > a:hover,
 .active {
   border-bottom: 2px solid white;
 }
 
 button {
-  border: transparent;
-  /* padding: 3% 10%; */
-  width: 200px;
-  height: 50px;
-  border-radius: 30%;
+  border: none;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 25px 25px;
 }
 
-button>a {
+button > a {
   color: black;
+  font-weight: 600;
 }
 
-button>a:hover,
-button>a.active {
-  border-bottom: none;
+button:hover {
+  transition-duration: 0.4s;
+  background-color: transparent;
+  border: #ffffff 2px solid;
+  box-shadow: inset 0 0 50px rgb(255, 255, 255)
 }
-
 
 .link {
   color: #147E68;
