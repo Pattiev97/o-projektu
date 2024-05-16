@@ -5,7 +5,9 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal, italic;
-};
+}
+
+;
 
 /* Používáme intuitivní výpočet rozměrů prvků. */
 *,
@@ -21,19 +23,38 @@ html {
 body {
   margin: 0;
   line-height: 1.7em;
-  color: #505050;
+  background: linear-gradient(90deg, #004A39, #147E68 30%, #B3D6D2 55%);
+  color: #ffffff;
 }
 
 a {
   color: white;
   text-decoration: none;
   padding: 8px 0;
-
 }
 
-a:hover, .active {
+a:hover,
+.active {
   border-bottom: 2px solid white;
 }
+
+button {
+  border: transparent;
+  /* padding: 3% 10%; */
+  width: 200px;
+  height: 50px;
+  border-radius: 30%;
+}
+
+button>a {
+  color: black;
+}
+
+button>a:hover,
+button>a.active {
+  border-bottom: none;
+}
+
 
 .link {
   color: #147E68;
@@ -49,9 +70,8 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 960px;
-  margin: 0 auto; 
-  padding: 80px 0 50px;
+  max-width: 100vw;
+  margin: 0 auto;
 }
 
 ul {
@@ -71,7 +91,7 @@ ul {
 header,
 footer {
   padding: 1% 0 1% 0;
-  background: linear-gradient(90deg, rgba(0,77,58,1) 0%, rgba(27,124,101,1) 100%);
+  background: linear-gradient(90deg, rgba(0, 77, 58, 1) 0%, rgba(27, 124, 101, 1) 100%);
   color: rgb(255, 255, 255);
 }
 
@@ -96,6 +116,29 @@ footer {
 .pink {
   justify-content: center;
   align-items: center;
+  padding: 5% 15%;
+}
+
+.white {
+  background: white;
+  color: black;
+}
+
+.pink {
+  background: #F4D8D8;
+  padding: 0% 15%;
+  color: black;
+}
+
+.container__text--green,
+.container__text--pink {
+  padding: 10% 10% 10% 2%;
+  text-align: justify;
+}
+
+.container__text--white {
+  padding: 10% 2% 10% 10%;
+  text-align: justify;
 }
 
 img {
