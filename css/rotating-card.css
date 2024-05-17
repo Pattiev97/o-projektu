@@ -168,6 +168,14 @@ body {
   border-bottom: 2px solid white;
 }
 
+.page {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 /* další... */
 .atv, .str{
     color: #05AE0E;
