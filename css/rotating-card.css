@@ -176,7 +176,7 @@ body {
     height: 100vh;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .page {
         display: block;
         margin: 5rem auto;
@@ -184,7 +184,6 @@ body {
         height: max-content;
     }
 };
-
 
 /* další... */
 .atv, .str{
