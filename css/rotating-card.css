@@ -176,6 +176,16 @@ body {
     height: 100vh;
 }
 
+@media (max-width: 768px) {
+    .page {
+        display: block;
+        margin: 5rem auto;
+        max-width: 1200px;
+        height: max-content;
+    }
+};
+
+
 /* další... */
 .atv, .str{
     color: #05AE0E;
