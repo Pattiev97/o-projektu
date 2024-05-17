@@ -23,7 +23,8 @@ html {
 body {
   margin: 0;
   line-height: 1.7em;
-  background: linear-gradient(90deg, #004A39, #147E68 30%, #B3D6D2 55%);
+  background: rgb(241,255,255);
+  background: radial-gradient(circle, rgba(241,255,255,1) 0%, rgb(153, 211, 221) 100%);
   color: #ffffff;
 }
 
@@ -106,6 +107,10 @@ footer {
   margin-right: auto;
   margin-left: auto;
   display: flex;
+}
+
+.green {
+  background: linear-gradient(90deg, #004A39, #147E68 30%, #B3D6D2 55%)
 }
 
 .green,
