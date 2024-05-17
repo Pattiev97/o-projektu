@@ -170,7 +170,8 @@ h2 {
   text-align: justify;
 }
 
-img {
+.img-homepage,
+.img-project {
   max-width: 320px;
   border-radius: 40px;
   margin: 0 5%
