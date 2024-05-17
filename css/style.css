@@ -59,7 +59,7 @@ button:hover {
 }
 
 .final-project {
-  margin-top: 2em;
+  margin: 2em;
   background-color: rgb(20, 126, 104);
 }
 
@@ -156,8 +156,6 @@ h2 {
   flex-direction: column;
   align-items: end;
 }
-
-
 
 .container__text--green,
 .container__text--pink {
