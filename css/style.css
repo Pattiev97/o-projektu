@@ -165,8 +165,7 @@ h2 {
 }
 
 .container__text--green,
-.container__text--pink,
-.container__text--project {
+.container__text--pink {
   padding: 10% 15% 10% 2%;
   text-align: justify;
 }
@@ -183,15 +182,19 @@ h2 {
 
 .container.project {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
-  min-height: 100vh;
+  min-height: calc(100vh - 7em);
+}
 
-  /* calc(100vh - 7em) */
+.container__text--project {
+  padding: 5% 20% 0 20%;
+  text-align: center;
 }
 
 .project {
+  margin: 0;
   padding: 0% 15%;
   color: #505050;
   font-size: 1.5rem;
