@@ -40,22 +40,29 @@ a {
 }
 
 button {
+  display: inline-block; /*tohle snad rozšíří oblast, kde je odkaz */
   border: none;
   background-color: #ffffff;
-  padding: 15px 20px;
-  border-radius: 25px 25px;
-  width: 20em;
+  padding: 15px 30px;
+  border-radius: 60px;
+  box-shadow: 0px 3px 24px #414141;
 }
 
 button>a {
   color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
   font-weight: 600;
 }
 
+button>a:hover {
+  color: black;
+}
+
 button:hover {
-  transition-duration: 0.4s;
-  border: #ffffff 2px solid;
-  box-shadow: inset 0 0 50px rgb(153, 211, 221)
+  background-color: transparent;
+  border: #dadada 2px solid;
+  box-shadow: inset 0 0 30px rgb(132, 194, 205)
 }
 
 .final-project {
@@ -168,9 +175,14 @@ h2 {
   text-align: justify;
 }
 
+.img-cover {
+  width: 100%;
+  border-radius: 20px;
+}
+
 .img-homepage,
 .img-project {
   max-width: 320px;
-  border-radius: 40px;
+  border-radius: 25px;
   margin: 0 5%
 }
