@@ -157,6 +157,17 @@ body {
     text-align: center;
 }
 
+.menu__list > a
+{
+  font-size: 16px;
+  color: white !important;
+}
+
+.menu__list > a:hover
+{
+  border-bottom: 2px solid white;
+}
+
 /* další... */
 .atv, .str{
     color: #05AE0E;
