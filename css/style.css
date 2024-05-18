@@ -39,7 +39,8 @@ a {
 }
 
 button {
-  display: inline-block; /*tohle snad rozšíří oblast, kde je odkaz */
+  display: inline-block;
+  /*tohle snad rozšíří oblast, kde je odkaz */
   border: none;
   background-color: #ffffff;
   padding: 15px 30px;
