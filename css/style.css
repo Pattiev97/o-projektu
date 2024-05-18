@@ -25,6 +25,7 @@ body {
   background: rgb(241, 255, 255);
   background: radial-gradient(circle, rgba(241, 255, 255, 1) 0%, rgb(153, 211, 221) 100%);
   color: #ffffff;
+  width: 100vw;
 }
 
 a {
@@ -133,7 +134,8 @@ h2 {
 }
 
 .green {
-  background: linear-gradient(90deg, #004A39, #147E68 30%, #B3D6D2 55%)
+  background: linear-gradient(90deg, #004A39, #147E68 30%, #B3D6D2 55%);
+  width: 100%;
 }
 
 .green,
@@ -218,3 +220,14 @@ h2 {
 .img-project {
   width: 300px;
 }
+
+@media (max-width: 950px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+
+}
+
+;
