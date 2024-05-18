@@ -233,6 +233,20 @@ h2 {
   width: 300px;
 }
 
+
+@media (min-width: 1201px) {
+  .container__graphic {
+    margin-top: 5rem;
+  }
+}
+
+@media (min-width: 951px) and (max-width: 1120px) {
+  .container__graphic {
+    height: 100vh;
+    justify-content: space-evenly;
+  }
+}
+
 @media (max-width: 950px) {
   .container {
     display: flex;
@@ -290,8 +304,13 @@ h2 {
     margin: 2em 2em 5em;
     background-color: rgb(20, 126, 104);
   }
-}
 
+  .container__graphic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 @media (max-width: 450px) {
   h1 {
@@ -341,6 +360,10 @@ h2 {
 
   .container__text--project {
     padding: 5% 20% 30% 20%;
+  }
+
+  .container__graphic {
+    align-items: center;
   }
 }
 

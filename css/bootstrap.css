@@ -25,6 +25,10 @@ html {
 }
 
 
+.social-links > a:hover {
+  color: rgba(27, 124, 101, 1);
+}
+
 a:active,
 a:hover {
   outline: 0;
