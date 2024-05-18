@@ -292,18 +292,6 @@ a {
   text-decoration: none;
 }
 
-a:hover,
-a:focus {
-  color: #00844f;
-  text-decoration: none;
-}
-
-a:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-
 img {
   vertical-align: middle;
 }

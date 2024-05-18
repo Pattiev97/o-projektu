@@ -1,29 +1,19 @@
-const shortenText = () => {
-  const cardTexts = document.querySelectorAll('[data-max-words]');
+const toggleMenu = (menuSelector, iconSelector) => {
+  const menu = document.querySelector(menuSelector);
+  const icon = document.querySelector(iconSelector);
+  if (!menu || !icon) return;
 
-  cardTexts.forEach((cardText) => {
-    const maxWords = parseInt(cardText.getAttribute('data-max-words'));
-    const originalText =
-      cardText.getAttribute('data-original-text') ||
-      cardText.textContent.trim();
+  const computedStyle = getComputedStyle(menu);
 
-    if (!cardText.getAttribute('data-original-text')) {
-      cardText.setAttribute('data-original-text', originalText);
-    }
-
-    if (window.matchMedia('(max-width: 350px)').matches) {
-      const wordsArray = originalText.split(/\s+/);
-      if (wordsArray.length > maxWords) {
-        const updatedText = wordsArray.slice(0, maxWords).join(' ') + '...';
-        cardText.textContent = updatedText;
-      } else {
-        cardText.textContent = originalText;
-      }
-    } else {
-      cardText.textContent = originalText;
-    }
-  });
+  if (computedStyle.display === "block") {
+    menu.style.display = "none";
+    icon.firstElementChild.className = "fa fa-bars";
+  } else {
+    menu.style.display = "block";
+    icon.firstElementChild.className = "fa fa-times";
+  }
 };
 
-window.addEventListener('load', shortenText);
-window.addEventListener('resize', shortenText);
+document.getElementById('hamburger').addEventListener('click', () => {
+  toggleMenu('.menu', '.icon');
+});
