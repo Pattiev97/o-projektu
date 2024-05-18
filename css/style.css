@@ -136,6 +136,7 @@ h2 {
 .green {
   background: linear-gradient(90deg, #004A39, #147E68 30%, #B3D6D2 55%);
   width: 100%;
+  padding: 2% 20%;
 }
 
 .green,
@@ -148,7 +149,7 @@ h2 {
 .pink {
   justify-content: center;
   align-items: center;
-  padding: 2% 20%;
+  padding: 0 10% 0 10%;
 }
 
 .white {
@@ -173,8 +174,12 @@ h2 {
   text-align: justify;
 }
 
+.container__text--pink {
+  padding: 10% 20% 10% 2%;
+}
+
 .container__text--white {
-  padding: 10% 2% 10% 15%;
+  padding: 10% 2% 10% 10%;
   text-align: justify;
 }
 
@@ -227,6 +232,103 @@ h2 {
     flex-direction: column-reverse;
   }
 
+  .container__text--green,
+  .container__text--pink,
+  .container__text--white {
+    padding: 10%;
+  }
 
+  .img-homepage,
+  .img-project {
+    margin: 15% 5%;
+    max-width: 320px;
+    border-radius: 25px;
+    margin-top: 0;
+  }
+
+  .img-project {
+    margin: 5% 15%;
+  }
+
+  button {
+    display: inline-block;
+    border: none;
+    background-color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 60px;
+    box-shadow: 0px 3px 24px #414141;
+    margin: 10% 0;
+  }
+
+  .green {
+    background: linear-gradient(90deg, #004A39, #147E68 30%, #B3D6D2 95%);
+    width: 100%
+  }
+
+  .pink {
+    background: #F4D8D8;
+    color: black;
+    padding-bottom: 10%
+  }
+
+  .green,
+  .white,
+  .pink {
+    justify-content: center;
+    align-items: center;
+    padding: 2% 20%;
+  }
+
+  .final-project {
+    margin: 2em 2em 5em;
+    background-color: rgb(20, 126, 104);
+  }
 }
 
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  .green {
+    background: linear-gradient(90deg, #004A39, #147E68 50%, #B3D6D2);
+    width: 100%
+  }
+
+  .img-homepage,
+  .img-project {
+    margin: 15% 5%;
+    max-width: 250px;
+    border-radius: 25px;
+    margin-top: 0;
+  }
+
+  .img-project {
+    margin: 5% 15%;
+  }
+
+  .final-project {
+    margin: 2em 4em 5em;
+    background-color: rgb(20, 126, 104);
+  }
+
+  .container__graphic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .green,
+  .white,
+  .pink {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .container__text--green {
+    text-align: center;
+    padding: 10%;
+  }
+}
